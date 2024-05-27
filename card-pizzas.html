@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+  <img src="https://i.postimg.cc/t40gTqB7/pizza-italiana.jpg" alt="Pizza Italiana">
+  <h1>Pizza Italiana</h1>
+  <h2>A mais melhor</h2>
+  <span>R$ 20.00</span>
+  <button>Comprar</button>
+  </div>
+
+  <div class="card">
+  <img src="https://i.postimg.cc/rwSwRBHj/pizza-calabreza.jpg" alt="Pizza de Calabresa">
+  <h1>Pizza de Calabresa</h1>
+  <h2>A mais melhor</h2>
+  <span>R$ 20.00</span>
+  <button>Comprar</button>
+  </div>
+
+  <div class="card">
+  <img src="https://i.postimg.cc/FskRNdg2/receta-facil-para-hacer-una-pizza-mozzarella-casera-min.jpg" alt="Pizza de Mussarela">
+  <h1>Pizza de Mussarela</h1>
+  <h2>A mais melhor</h2>
+  <span>R$ 20.00</span>
+  <button>Comprar</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: lightblue;
+}
+.container{    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;   
+    gap:40px;
+    margin-top:500px;    
+}
+.card{
+    background-color:white;
+    box-shadow:0 0 3px 1px;
+    width:300px;
+    height:430px;
+    border-radius:10px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+.card img{
+    border-radius:10px 10px 0px 0px;
+    height:200px;
+}
+.card h1{
+    color:#6495ED;
+    margin-top:10px;
+}
+.card h2 {
+    color:SkyBlue;
+}
+span{
+    margin-top:10px;
+    font-size:20px;
+}
+.card button{
+   background-color:green;
+   color:white;
+   font-weight:bolder;
+   font-size:20px;
+   padding:10px;
+   margin-left:20px;
+   margin-right:20px;
+   margin-top:25px;
+   cursor:pointer;
+   border:none;
+   border-radius:10px;
+}
+@media only screen and (max-width: 600px) { 
+  .container{
+    font-size: 14px;
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  .card{
+      height:400px;
+  }
+}
+</style>
